@@ -1,0 +1,6 @@
+name: limits-monitor
+version: "0.1.0"
+label: Limits
+description: Privacy-first desktop panel for provider allowance data exposed by Hermes
+requires_hermes: ">=0.22.5"
+tags: [desktop, usage, privacy]

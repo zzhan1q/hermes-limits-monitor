@@ -1,0 +1,23 @@
+{
+  "name": "hermes-limits-monitor",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Privacy-first Hermes desktop provider quota monitor",
+  "license": "MIT",
+  "type": "module",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "plugin.yaml",
+    "desktop/plugin.js"
+  ],
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "test": "node --test tests/plugin.test.mjs"
+  },
+  "devDependencies": {
+    "@tanstack/query-core": "5.101.2"
+  }
+}
