@@ -19,7 +19,7 @@ The plugin is enabled by default after installation. For a direct Git install be
 - `host.request('model.options', ...)` only for the active local profile when no route descriptor is available.
 - Hermes provider catalog allowance fields such as `usage.windows`, `usage.accounts[].windows`, `plan_usage.gauges`, and provider state/limit metadata.
 
-It does **not** read session transcripts or session/subagent lists, OAuth/credential files, API keys, cookies, or chat contents. It does not call vendor usage endpoints directly, send data externally, log raw responses, or persist plugin-owned data. Results remain in the existing in-memory query cache while the app is running.
+It does **not** read session transcripts or session/subagent lists, OAuth/credential files, API keys, cookies, or chat contents. It does not call vendor usage endpoints directly, log raw responses, or persist plugin-owned data. All queries use Hermes's existing RPC surface. When an accessible profile belongs to a remote connection, its `model.options` request goes to that profile's configured Hermes gateway, which handles its normal backend refresh/cache behavior. The plugin itself sends no telemetry or requests to other destinations. Results remain in the existing in-memory query cache while the app is running.
 
 The panel reports provider allowances, not token counts or chat context size. Missing or invalid fields are shown as unavailable; they are never guessed as zero. Providers that do not expose quota through Hermes may show no data. Different observations are not added together or assumed to share an account unless Hermes itself establishes that relationship.
 
