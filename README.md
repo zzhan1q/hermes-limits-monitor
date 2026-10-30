@@ -2,6 +2,12 @@
 
 A desktop-only Hermes plugin that displays provider allowance windows exposed through Hermes. It discovers reachable profiles automatically and shows only quota fields Hermes actually provides; provider coverage and reset information vary.
 
+## Screenshot
+
+![Hermes Limits panel with profile and quota values visible](https://raw.githubusercontent.com/zzhan1q/hermes-limits-monitor/main/screenshots/limits-monitor.png)
+
+_Original capture; the profile label, quota percentages, and reset times are visible._
+
 ## Install
 
 Once listed in the Hermes catalog, install it with:
